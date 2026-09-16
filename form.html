@@ -1,214 +1,99 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      body {
-        font-family: "Times New Roman", Times, serif;
-        background-color: #ffffff;
-        display: flex;
-        justify-content: center;
-        padding-top: 40px;
-      }
-
-      .form-container {
-        border: 1px solid #7c8db0;
-        border-radius: 6px;
-        padding: 30px 40px 40px 40px;
-        width: 550px;
-      }
-
-      h1 {
-        text-align: center;
-        color: #1a2a6c;
-        font-size: 26px;
-        letter-spacing: 1px;
-        margin-bottom: 5px;
-      }
-
-      hr {
-        border: none;
-        border-top: 1px solid #ccc;
-        margin-bottom: 25px;
-      }
-
-      .form-row {
-        display: flex;
-        align-items: flex-start;
-        margin-bottom: 14px;
-        color: #1a2a6c;
-        font-size: 16px;
-      }
-
-      .form-label {
-        width: 190px;
-        flex-shrink: 0;
-      }
-
-      .colon {
-        width: 15px;
-        flex-shrink: 0;
-      }
-
-      input[type="text"],
-      input[type="password"],
-      input[type="email"],
-      input[type="tel"],
-      select,
-      textarea {
-        flex: 1;
-        border: 1px solid #a9b7d6;
-        border-radius: 4px;
-        padding: 6px 10px;
-        font-family: "Times New Roman", Times, serif;
-        font-size: 15px;
-        color: #333;
-        background-color: #fdfdfd;
-      }
-
-      textarea {
-        height: 90px;
-        resize: none;
-      }
-
-      .radio-group,
-      .checkbox-group {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-        color: #1a2a6c;
-      }
-
-      .radio-group {
-        flex-direction: row;
-        gap: 20px;
-        align-items: center;
-      }
-
-      .radio-group label,
-      .checkbox-group label {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-      }
-
-      .buttons {
-        margin-top: 25px;
-        padding-top: 15px;
-        border-top: 1px solid #ccc;
-      }
-
-      button {
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        padding: 6px 18px;
-        border-radius: 4px;
-        border: 1px solid #b8b8b8;
-        background-color: #f2f2f2;
-        cursor: pointer;
-        margin-right: 8px;
-      }
-
-      button:hover {
-        background-color: #e6e6e6;
-      }
-    </style>
   </head>
+
   <body>
-    <div class="form-container">
-      <h1>FORM DATA SISWA</h1>
-      <hr />
+    <form>
+      <table border="1" cellspacing="0" cellpadding="10" align="center">
+        <tr>
+          <td>
+            <h1 align="center">FORM DATA SISWA</h1>
+            <hr />
 
-      <form>
-        <div class="form-row">
-          <div class="form-label">Username</div>
-          <div class="colon">:</div>
-          <input type="text" name="username" />
-        </div>
+            <table cellpadding="3">
+              <tr>
+                <td>Username</td>
+                <td>:</td>
+                <td><input type="text" /></td>
+              </tr>
 
-        <div class="form-row">
-          <div class="form-label">Password</div>
-          <div class="colon">:</div>
-          <input type="password" name="password" />
-        </div>
+              <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td><input type="password" /></td>
+              </tr>
 
-        <div class="form-row">
-          <div class="form-label">Nama Lengkap</div>
-          <div class="colon">:</div>
-          <input type="text" name="nama_lengkap" />
-        </div>
+              <tr>
+                <td>Nama Lengkap</td>
+                <td>:</td>
+                <td><input type="text" /></td>
+              </tr>
 
-        <div class="form-row">
-          <div class="form-label">No. Handphone</div>
-          <div class="colon">:</div>
-          <input type="tel" name="no_hp" />
-        </div>
+              <tr>
+                <td>No. Handphone</td>
+                <td>:</td>
+                <td><input type="text" /></td>
+              </tr>
 
-        <div class="form-row">
-          <div class="form-label">E-Mail</div>
-          <div class="colon">:</div>
-          <input type="email" name="email" />
-        </div>
+              <tr>
+                <td>E-mail</td>
+                <td>:</td>
+                <td><input type="text" /></td>
+              </tr>
 
-        <div class="form-row">
-          <div class="form-label">Jenis Kelamin</div>
-          <div class="colon">:</div>
-          <div class="radio-group">
-            <label
-              ><input type="radio" name="jenis_kelamin" value="Pria" />
-              Pria</label
-            >
-            <label
-              ><input type="radio" name="jenis_kelamin" value="Wanita" />
-              Wanita</label
-            >
-          </div>
-        </div>
+              <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                  <input type="radio" name="jk" /> Laki-laki
+                  <input type="radio" name="jk" /> Perempuan
+                </td>
+              </tr>
 
-        <div class="form-row">
-          <div class="form-label">Hobi</div>
-          <div class="colon">:</div>
-          <div class="checkbox-group">
-            <label
-              ><input type="checkbox" name="hobi" value="Menyanyi" />
-              Menyanyi</label
-            >
-            <label
-              ><input type="checkbox" name="hobi" value="Olahraga" />
-              Olahraga</label
-            >
-            <label
-              ><input type="checkbox" name="hobi" value="Membaca" />
-              Membaca</label
-            >
-          </div>
-        </div>
+              <tr>
+                <td>Hobi</td>
+                <td>:</td>
+                <td>
+                  <input type="checkbox" /> Melukis<br />
+                  <input type="checkbox" /> Menggambar<br />
+                  <input type="checkbox" /> Membaca
+                </td>
+              </tr>
 
-        <div class="form-row">
-          <div class="form-label">Kompetensi Keahlian</div>
-          <div class="colon">:</div>
-          <select name="kompetensi">
-            <option>Rekayasa Perangkat Lunak</option>
-            <option>Akuntansi</option>
-            <option>Perkantoran</option>
-            <option>Bisnis Digital</option>
-            <option>Layanan Perbankan</option>
-          </select>
-        </div>
+              <tr>
+                <td>Kompetensi Keahlian</td>
+                <td>:</td>
+                <td>
+                  <select>
+                    <option>Rekayasa Perangkat Lunak</option>
+                    <option>Akutansi</option>
+                    <option>Manajement Perkantoran</option>
+                    <option>Layanan Perbankkan</option>
+                    <option>Bisnis Digital</option>
+                  </select>
+                </td>
+              </tr>
 
-        <div class="form-row">
-          <div class="form-label">Alamat</div>
-          <div class="colon">:</div>
-          <textarea name="alamat"></textarea>
-        </div>
+              <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td>
+                  <textarea rows="5" cols="25"></textarea>
+                </td>
+              </tr>
+            </table>
 
-        <div class="buttons">
-          <button type="submit">Kirim</button>
-          <button type="reset">Reset</button>
-        </div>
-      </form>
-    </div>
+            <hr />
+
+            <button type="submit">Kirim</button>
+            <button type="reset">Reset</button>
+          </td>
+        </tr>
+      </table>
+    </form>
   </body>
 </html>
